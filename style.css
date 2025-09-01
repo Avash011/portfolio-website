@@ -5,8 +5,13 @@
   font-family: "Poppins", sans-serif;
 }
 
+body, .container {
+  margin: 0;
+  padding: ;
+}
+
 body {
-  height: 100vh;
+  height: 10vh;
   width: 100%;
 }
 
@@ -122,12 +127,13 @@ nav ul li a {
 
 /* Footer styles */
 .site-footer {
-  background-color: #000;
+  background-color: #ffffff;
   color: white;
-  padding: 20px 0;
+  padding: 20px 0px;
   text-align: center;
   font-family: "Poppins", sans-serif;
-  margin-top: 40px;
+  margin-top: 50px;
+  
 }
 
 .site-footer .footer-content {
@@ -155,10 +161,14 @@ nav ul li a {
 }
 
 .site-footer .footer-social-icons {
-  margin: 10px 0;
+  margin: 0;
 }
 
 .site-footer .footer-social-icons a {
+  background-color: black;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
   color: white;
   margin: 0 10px;
   font-size: 1.5rem;
@@ -168,10 +178,11 @@ nav ul li a {
 
 .site-footer .footer-social-icons a:hover {
   color: #777;
+  background-color: #222;
 }
 
 .site-footer .footer-copy {
   font-size: 0.9rem;
-  margin-top: 10px;
+  margin-top: 0;
   color: #aaa;
 }
