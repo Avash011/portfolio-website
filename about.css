@@ -1,0 +1,96 @@
+/* About Page Styles */
+
+.about-container {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+.about-title {
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.about-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  color: #555;
+}
+
+.divider {
+  width: 80px;
+  height: 3px;
+  background: #333;
+  margin: 40px auto;
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 3px;
+  background: #333;
+}
+
+.divider::before {
+  left: -30px;
+  transform: rotate(25deg);
+}
+
+.divider::after {
+  right: -30px;
+  transform: rotate(-25deg);
+}
+
+.about-sections {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.about-section {
+  flex: 1 1 250px;
+  background: #f0f0f0;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.about-section h3 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.about-section p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #666;
+}
+
+.about-section i {
+  color: #333;
+}
+
+/* Animation: fade-in and slide-up */
+.about-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

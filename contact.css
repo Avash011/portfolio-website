@@ -1,0 +1,97 @@
+/* Contact Page Styles */
+
+.contact-container {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 0 20px;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.contact-title {
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  border: 2px solid #333;
+  display: inline-block;
+  padding: 10px 30px;
+}
+
+.contact-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.divider {
+  width: 80px;
+  height: 3px;
+  background: #333;
+  margin: 20px auto 40px auto;
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 3px;
+  background: #333;
+}
+
+.divider::before {
+  left: -30px;
+  transform: rotate(25deg);
+}
+
+.divider::after {
+  right: -30px;
+  transform: rotate(-25deg);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  border: 2px solid #333;
+  padding: 10px 10px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  resize: none;
+  border-radius: 5px;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+.submit-btn {
+  background-color: #333;
+  border: none;
+  padding: 15px 0;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #555;
+  color: white;
+}
